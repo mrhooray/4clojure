@@ -7,6 +7,5 @@
   ([x & xs] (and x (apply land xs))))
 
 (deftest test-all
-  (is (= (apply land q001) true))
-  (is (= (apply land q002) true))
-  )
+  (doseq [expr-coll (map var-get (vals (ns-publics 'foreclojure.question)))] 
+    (is (= (apply land expr-coll) true))))
