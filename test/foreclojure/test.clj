@@ -1,11 +1,30 @@
 (ns foreclojure.test
-  (:use [clojure.test] 
-        [foreclojure.problems]))
+  (:use clojure.test 
+        foreclojure.solutions
+        foreclojure.problems)
+  (:require [clojure.pprint :as pprint]
+            [clojure.string :as string]))
+
+(def width 3)
+
+(defn pad-number [n width]
+  (pprint/cl-format nil (str "~" width ",'0d") n))
+
+(defn get-solution [n]
+  ((comp var-get find-var symbol)
+   (str "foreclojure.solutions/s" (pad-number n width))))
+
+(defn get-problem [n]
+  ((comp var-get find-var symbol)
+   (str "foreclojure.problems/p" (pad-number n width))))
+
+(defn solve [problem solution]
+  (map (comp load-string #(string/replace % #"___" solution)) problem))
 
 (defn land
   ([] true)
   ([x & xs] (and x (apply land xs))))
 
 (deftest test-all
-  (doseq [expr-coll (map var-get (vals (ns-publics 'foreclojure.problems)))] 
-    (is (= (apply land expr-coll) true))))
+  (doseq [n (map inc (doall (range (count (ns-publics 'foreclojure.problems)))))]
+    (is (= (apply land (solve (get-problem n) (get-solution n))) true))))
