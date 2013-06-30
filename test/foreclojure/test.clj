@@ -1,5 +1,6 @@
 (ns foreclojure.test
   (:use clojure.test 
+        clojure.set
         foreclojure.solutions
         foreclojure.problems)
   (:require [clojure.pprint :as pprint]
@@ -19,7 +20,7 @@
    (str "foreclojure.problems/p" (pad-number n width))))
 
 (defn solve [problem solution]
-  (map (comp load-string #(string/replace % #"___" solution)) problem))
+  (map (comp load-string #(string/replace % #"__" solution)) problem))
 
 (defn land
   ([] true)
