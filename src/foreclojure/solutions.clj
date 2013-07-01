@@ -39,3 +39,8 @@
 (def s019 "(comp first reverse)")
 
 (def s020 "(comp last butlast)")
+
+(def s021 "(fn [coll n]
+            (if (zero? n)
+              (first coll)
+              (recur (rest coll) (dec n))))")
