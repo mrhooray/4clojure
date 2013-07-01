@@ -46,3 +46,5 @@
               (recur (rest coll) (dec n))))")
 
 (def s022 "reduce (fn [c _] (inc c)) 0")
+
+(def s023 "#(into '() %)")
