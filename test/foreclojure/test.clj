@@ -14,12 +14,12 @@
 (defn get-solution [n]
   (let 
     [v (find-var (symbol (str "foreclojure.solutions/s" (pad-number n width))))]
-    (if v (var-get v) nil)))
+    (if v (var-get v))))
 
 (defn get-problem [n]
   (let 
     [v (find-var (symbol (str "foreclojure.problems/p" (pad-number n width))))]
-    (if v (var-get v) nil)))
+    (if v (var-get v))))
 
 (defn solve [problem solution]
   (map (comp load-string #(string/replace % #"__" solution)) problem))
