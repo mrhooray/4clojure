@@ -12,12 +12,14 @@
   (pprint/cl-format nil (str "~" width ",'0d") n))
 
 (defn get-solution [n]
-  ((comp var-get find-var symbol)
-   (str "foreclojure.solutions/s" (pad-number n width))))
+  (let 
+    [v (find-var (symbol (str "foreclojure.solutions/s" (pad-number n width))))]
+    (if v (var-get v) nil)))
 
 (defn get-problem [n]
-  ((comp var-get find-var symbol)
-   (str "foreclojure.problems/p" (pad-number n width))))
+  (let 
+    [v (find-var (symbol (str "foreclojure.problems/p" (pad-number n width))))]
+    (if v (var-get v) nil)))
 
 (defn solve [problem solution]
   (map (comp load-string #(string/replace % #"__" solution)) problem))
@@ -27,5 +29,8 @@
   ([x & xs] (and x (apply land xs))))
 
 (deftest test-all
-  (doseq [n (map inc (doall (range (count (ns-publics 'foreclojure.problems)))))]
-    (is (= (apply land (solve (get-problem n) (get-solution n))) true))))
+  (doseq 
+    [n (map inc (doall (range (count (ns-publics 'foreclojure.problems)))))]
+    (let [problem (get-problem n) solution (get-solution n)]
+      (if (and problem solution)
+        (is (= (apply land (solve problem solution)) true))))))
