@@ -44,3 +44,5 @@
             (if (zero? n)
               (first coll)
               (recur (rest coll) (dec n))))")
+
+(def s022 "reduce (fn [c _] (inc c)) 0")
