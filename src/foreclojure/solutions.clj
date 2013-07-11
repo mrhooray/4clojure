@@ -55,3 +55,5 @@
 
 (def s026 "#(take % ((fn fib [a b]
                       (lazy-seq (cons a (fib b (+ a b))))) 1 1))")
+
+(def s027 "#(= (seq %) (reverse %))")
