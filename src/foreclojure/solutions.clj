@@ -48,3 +48,10 @@
 (def s022 "reduce (fn [c _] (inc c)) 0")
 
 (def s023 "#(into '() %)")
+
+(def s024 "apply +")
+
+(def s025 "filter odd?")
+
+(def s026 "#(take % ((fn fib [a b]
+                      (lazy-seq (cons a (fib b (+ a b))))) 1 1))")
