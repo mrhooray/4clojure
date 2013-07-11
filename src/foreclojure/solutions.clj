@@ -57,3 +57,6 @@
                       (lazy-seq (cons a (fib b (+ a b))))) 1 1))")
 
 (def s027 "#(= (seq %) (reverse %))")
+
+(def s028 "#(filter (complement sequential?)
+                   (rest (tree-seq sequential? seq %)))")
