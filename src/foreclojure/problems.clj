@@ -1,7 +1,6 @@
 (ns foreclojure.problems
   (:use [foreclojure.solutions]))
 
-
 ; Nothing but the Truth
 (def p001 ["(= __ true)"])
 
@@ -71,6 +70,7 @@
 (def p018 ["(= __ (filter #(> % 5) '(3 4 5 6 7)))"])
 
 ; Last Element
+; Restrictions: last
 (def p019 ["(= (__ [1 2 3 4 5]) 5)"
            "(= (__ '(5 4 3)) 3)"
            "(= (__ [\"b\" \"c\" \"d\"]) \"d\")"])
@@ -81,12 +81,14 @@
            "(= (__ [[1 2] [3 4]]) [1 2])"])
 
 ; Nth Element
+; Restrictions: nth
 (def p021 ["(= (__ '(4 5 6 7) 2) 6)"
            "(= (__ [:a :b :c] 0) :a)"
            "(= (__ [1 2 3 4] 1) 2)"
            "(= (__ '([1 2] [3 4] [5 6]) 2) [5 6])"])
 
 ; Count a Sequence
+; Restrictions: count
 (def p022 ["(= (__ '(1 2 3 3 1)) 5)"
            "(= (__ \"Hello World\") 11)"
            "(= (__ [[1 2] [3 4] [5 6]]) 3)"
@@ -94,6 +96,7 @@
            "(= (__ '(:a :b :c)) 3)"])
 
 ; Reverse a Sequence
+; Restrictions: reverse rseq
 (def p023 ["(= (__ [1 2 3 4 5]) [5 4 3 2 1])"
            "(= (__ (sorted-set 5 7 2 7)) '(7 5 2))"
            "(= (__ [[1 2][3 4][5 6]]) [[5 6][3 4][1 2]])"])
@@ -124,6 +127,7 @@
            "(false? (__ '(:a :b :c)))"])
 
 ; Flatten a Sequence
+; Restrictions: flatten
 (def p028 ["(= (__ '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6))"
            "(= (__ [\"a\" [\"b\"] \"c\"]) '(\"a\" \"b\" \"c\"))"
            "(= (__ '((((:a))))) '(:a))"])
