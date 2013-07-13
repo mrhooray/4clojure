@@ -60,3 +60,5 @@
 
 (def s028 "#(filter (complement sequential?)
                    (rest (tree-seq sequential? seq %)))")
+
+(def s029 "#(apply str (re-seq #\"[A-Z]\" %))")
