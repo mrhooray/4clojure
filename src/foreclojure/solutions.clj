@@ -62,3 +62,5 @@
                    (rest (tree-seq sequential? seq %)))")
 
 (def s029 "#(apply str (re-seq #\"[A-Z]\" %))")
+
+(def s030 "#(map first (partition-by identity %))")
