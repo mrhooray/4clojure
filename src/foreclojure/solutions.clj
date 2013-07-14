@@ -68,3 +68,5 @@
 (def s031 "partition-by identity")
 
 (def s032 "#(interleave % %)")
+
+(def s033 "#(mapcat (partial repeat %2) %)")
