@@ -66,3 +66,5 @@
 (def s030 "#(map first (partition-by identity %))")
 
 (def s031 "partition-by identity")
+
+(def s032 "#(interleave % %)")
