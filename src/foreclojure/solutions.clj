@@ -64,3 +64,5 @@
 (def s029 "#(apply str (re-seq #\"[A-Z]\" %))")
 
 (def s030 "#(map first (partition-by identity %))")
+
+(def s031 "partition-by identity")
