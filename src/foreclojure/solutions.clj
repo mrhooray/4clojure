@@ -72,3 +72,5 @@
 (def s033 "#(mapcat (partial repeat %2) %)")
 
 (def s034 "#(take (- %2 %) (iterate inc %))")
+
+(def s035 "7")
