@@ -174,3 +174,6 @@
 (def p036 ["(= 10 (let __ (+ x y)))"
            "(= 4 (let __ (+ y z)))"
            "(= 1 (let __ z))"])
+
+; Regular Expressions
+(def p037 ["(= __ (apply str (re-seq #\"[A-Z]+\" \"bA1B3Ce \")))"])
