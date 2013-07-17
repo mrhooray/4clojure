@@ -74,3 +74,5 @@
 (def s034 "#(take (- %2 %) (iterate inc %))")
 
 (def s035 "7")
+
+(def s036 "[x 7 y 3 z 1]")
