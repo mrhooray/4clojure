@@ -80,3 +80,5 @@
 (def s037 "\"ABC\"")
 
 (def s038 "(fn [& xs] (reduce #(if (> %2 %1) %2 %1) xs))")
+
+(def s039 "mapcat list")
