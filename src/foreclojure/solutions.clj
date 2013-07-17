@@ -78,3 +78,5 @@
 (def s036 "[x 7 y 3 z 1]")
 
 (def s037 "\"ABC\"")
+
+(def s038 "(fn [& xs] (reduce #(if (> %2 %1) %2 %1) xs))")

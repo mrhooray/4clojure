@@ -177,3 +177,9 @@
 
 ; Regular Expressions
 (def p037 ["(= __ (apply str (re-seq #\"[A-Z]+\" \"bA1B3Ce \")))"])
+
+; Maximum value
+; Restrictions: max, max-key
+(def p038 ["(= (__ 1 8 3 4) 8)"
+           "(= (__ 30 20) 30)"
+           "(= (__ 45 67 11) 67)"])
