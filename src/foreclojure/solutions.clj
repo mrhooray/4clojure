@@ -93,3 +93,5 @@
 
 (def s044 "#(let [n (mod % (count %2))]
              (concat (drop n %2) (take n %2)))")
+
+(def s045 "[1 4 7 10 13]")
