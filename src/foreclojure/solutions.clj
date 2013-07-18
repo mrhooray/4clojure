@@ -90,3 +90,6 @@
 (def s042 "#(reduce * (take % (iterate dec %)))")
 
 (def s043 "#(apply map list (partition %2 %))")
+
+(def s044 "#(let [n (mod % (count %2))]
+             (concat (drop n %2) (take n %2)))")
