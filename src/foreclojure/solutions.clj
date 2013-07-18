@@ -95,3 +95,5 @@
              (concat (drop n %2) (take n %2)))")
 
 (def s045 "[1 4 7 10 13]")
+
+(def s046 "(fn [f] #(apply f (reverse %&)))")
