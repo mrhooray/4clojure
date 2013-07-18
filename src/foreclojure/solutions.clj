@@ -86,3 +86,5 @@
 (def s040 "#(rest (interleave (repeat %) %2))")
 
 (def s041 "#(mapcat identity (partition-all (dec %2) %2 %))")
+
+(def s042 "#(reduce * (take % (iterate dec %)))")
