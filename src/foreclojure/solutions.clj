@@ -97,3 +97,11 @@
 (def s045 "[1 4 7 10 13]")
 
 (def s046 "(fn [f] #(apply f (reverse %&)))")
+
+(def s047 "4")
+
+(def s048 "6")
+
+(def s049 "(juxt take drop)")
+
+(def s050 "#(vals (group-by class %))")
