@@ -7,11 +7,13 @@
 
 (def width 3)
 (def total 150)
+(def dir "solutions/")
+(def pattern #"\d{3}\..*\.clj")
 
-(doseq [file (rest (file-seq (io/file "solutions/")))] 
+(doseq [file (rest (file-seq (io/file dir)))] 
   (let [fileName (.getName file)]
-    (if (re-matches #"\d{3}\..*\.clj" fileName)
-      (load-file (str "solutions/" fileName)))))
+    (if (re-matches pattern fileName)
+      (load-file (str dir fileName)))))
 
 (defn pad-number [n width]
   (pprint/cl-format nil (str "~" width ",'0d") n))
