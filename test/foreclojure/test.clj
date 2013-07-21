@@ -9,8 +9,9 @@
 (def total 150)
 
 (doseq [file (rest (file-seq (io/file "solutions/")))] 
-  (if (re-matches #"\d{3}\..*\.clj" (.getName file))
-    (load-file (str "solutions/" (.getName file)))))
+  (let [fileName (.getName file)]
+    (if (re-matches #"\d{3}\..*\.clj" fileName)
+      (load-file (str "solutions/" fileName)))))
 
 (defn pad-number [n width]
   (pprint/cl-format nil (str "~" width ",'0d") n))
