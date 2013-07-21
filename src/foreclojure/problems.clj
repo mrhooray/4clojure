@@ -1,5 +1,4 @@
-(ns foreclojure.problems
-  (:use [foreclojure.solutions]))
+(ns foreclojure.problems)
 
 ; Nothing but the Truth
 (def p001 ["(= __ true)"])
