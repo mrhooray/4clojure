@@ -11,14 +11,9 @@
 (defn pad-number [n width]
   (pprint/cl-format nil (str "~" width ",'0d") n))
 
-(defn get-solution [n]
+(defn get-prefixed [prefix n]
   (let 
-    [v (find-var (symbol (str "foreclojure.solutions/s" (pad-number n width))))]
-    (if v (var-get v))))
-
-(defn get-problem [n]
-  (let 
-    [v (find-var (symbol (str "foreclojure.problems/p" (pad-number n width))))]
+    [v (find-var (symbol (str prefix (pad-number n width))))]
     (if v (var-get v))))
 
 (defn solve [problem solution]
@@ -31,6 +26,7 @@
 (deftest test-all
   (doseq 
     [n (map inc (doall (range (count (ns-publics 'foreclojure.problems)))))]
-    (let [problem (get-problem n) solution (get-solution n)]
+    (let [problem (get-prefixed "foreclojure.problems/p" n)
+          solution (get-prefixed "foreclojure.solutions/s" n)]
       (if (and problem solution)
         (is (= (apply land (solve problem solution)) true))))))
