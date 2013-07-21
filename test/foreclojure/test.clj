@@ -2,12 +2,13 @@
   (:use clojure.test)
   (:require clojure.set
             [clojure.pprint :as pprint]
+            [clojure.java.io :as io]
             [clojure.string :as string]))
 
 (def width 3)
 (def total 150)
 
-(doseq [file (rest (file-seq (clojure.java.io/file "solutions/")))] 
+(doseq [file (rest (file-seq (io/file "solutions/")))] 
   (->> (. file getName)
        (str "solutions/")
        (load-file)))
@@ -15,7 +16,7 @@
 (defn pad-number [n width]
   (pprint/cl-format nil (str "~" width ",'0d") n))
 
-(defn get-prefixed [prefix n]
+(defn get-val [prefix n]
   (let 
     [v (find-var (symbol (str prefix (pad-number n width))))]
     (if v (var-get v))))
@@ -30,7 +31,7 @@
 (deftest test-all
   (doseq 
     [n (map inc (doall (range total)))]
-    (let [problem (get-prefixed "foreclojure.test/p" n)
-          solution (get-prefixed "foreclojure.test/s" n)]
+    (let [problem (get-val "foreclojure.test/p" n)
+          solution (get-val "foreclojure.test/s" n)]
       (if (and problem solution)
         (is (= (apply land (solve problem solution)) true))))))
