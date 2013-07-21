@@ -2,7 +2,6 @@
 ```
 lein test
 ```
-
 ## solved problems
 - 001 Nothing but the Truth
 - 002 Simple Math
