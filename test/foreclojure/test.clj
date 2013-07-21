@@ -17,8 +17,7 @@
   (pprint/cl-format nil (str "~" width ",'0d") n))
 
 (defn get-val [prefix n]
-  (let 
-    [v (find-var (symbol (str prefix (pad-number n width))))]
+  (let [v (find-var (symbol (str prefix (pad-number n width))))]
     (if v (var-get v))))
 
 (defn solve [problem solution]
