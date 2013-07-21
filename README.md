@@ -7,20 +7,20 @@ lein test
 - 002 Simple Math
 - 003 Intro to Strings
 - 004 Intro to Lists
-- 005 Lists conj
+- 005 Lists: conj
 - 006 Intro to Vectors
-- 007 Vectors conj
+- 007 Vectors: conj
 - 008 Intro to Sets
-- 009 Sets conj
+- 009 Sets: conj
 - 010 Intro to Maps
-- 011 Maps conj
+- 011 Maps: conj
 - 012 Intro to Sequences
-- 013 Sequences rest
+- 013 Sequences: rest
 - 014 Intro to Functions
 - 015 Double Down
 - 016 Hello World
-- 017 Sequences map
-- 018 Sequences filter
+- 017 Sequences: map
+- 018 Sequences: filter
 - 019 Last Element
 - 020 Penultimate Element
 - 021 Nth Element
@@ -56,5 +56,5 @@ lein test
 - 057 Simple Recursion
 - 064 Intro to Reduce
 - 068 Recurring Theme
-- 071 Rearranging Code ->
-- 072 Rearranging Code ->>
+- 071 Rearranging Code: ->
+- 072 Rearranging Code: ->>
