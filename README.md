@@ -83,3 +83,73 @@ lein test
 078. [_] Reimplement Trampoline
 079. [_] Triangle Minimal Path
 080. [_] Perfect Numbers
+081. [_] Set Intersection
+082. [_] Word Chains
+083. [_] A Half-Truth
+084. [_] Transitive Closure
+085. [_] Power Set
+086. [_] Happy numbers
+087. [_] 
+088. [_] Symmetric Difference
+089. [_] Graph Tour
+090. [_] Cartesian Product
+091. [_] Graph Connectivity
+092. [_] Read Roman numerals
+093. [_] Partially Flatten a Sequence
+094. [_] Game of Life
+095. [_] To Tree, or not to Tree
+096. [_] Beauty is Symmetry
+097. [_] Pascal's Triangle
+098. [_] Equivalence Classes
+099. [_] Product Digits
+100. [_] Least Common Multiple
+101. [_] Levenshtein Distance
+102. [_] intoCamelCase
+103. [_] Generating k-combinations
+104. [_] Write Roman Numerals
+105. [_] Identify keys and values
+106. [_] Number Maze
+107. [_] Simple closures
+108. [_] Lazy Searching
+109. [_] 
+110. [_] Sequence of pronunciations
+111. [_] Crossword puzzle
+112. [_] Sequs Horribilis
+113. [_] Making Data Dance
+114. [_] Global take-while
+115. [_] The Balance of N
+116. [_] Prime Sandwich
+117. [_] For Science!
+118. [_] Re-implement Map
+119. [_] Win at Tic-Tac-Toe
+120. [_] Sum of square of digits
+121. [_] Universal Computation Engine
+122. [_] Read a binary number
+123. [_] 
+124. [_] Analyze Reversi
+125. [_] Gus' Quinundrum
+126. [_] Through the Looking Class
+127. [_] Love Triangle
+128. [_] Recognize Playing Cards
+129. [_] 
+130. [_] Tree reparenting
+131. [_] Sum Some Set Subsets
+132. [_] Insert between two items
+133. [_] 
+134. [_] A nil key
+135. [_] Infix Calculator
+136. [_] 
+137. [_] Digits and bases
+138. [_] Squares Squared
+139. [_] 
+140. [_] Veitch, Please!
+141. [_] Tricky card games
+142. [_] 
+143. [_] dot product
+144. [_] Oscilrate
+145. [_] For the win
+146. [_] Trees into tables
+147. [_] Pascal's Trapezoid
+148. [_] The Big Divide
+149. [_] 
+150. [_] Palindromic Numbers
