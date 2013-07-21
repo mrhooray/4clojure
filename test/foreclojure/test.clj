@@ -1,7 +1,7 @@
 (ns foreclojure.test
-  (:use clojure.test 
-        clojure.set)
-  (:require [clojure.pprint :as pprint]
+  (:use clojure.test)
+  (:require clojure.set
+            [clojure.pprint :as pprint]
             [clojure.string :as string]))
 
 (def width 3)
