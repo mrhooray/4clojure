@@ -19,8 +19,8 @@
   (pprint/cl-format nil (str "~" width ",'0d") n))
 
 (defn get-val [prefix n]
-  (let [v (find-var (symbol (str prefix (pad-number n width))))]
-    (if v (var-get v))))
+  (if-let [v (find-var (symbol (str prefix (pad-number n width))))]
+    (var-get v)))
 
 (defn solve [problem solution]
   (map (comp load-string #(string/replace % #"__" solution)) problem))
@@ -30,8 +30,7 @@
   ([x & xs] (and x (apply land xs))))
 
 (deftest test-all
-  (doseq 
-    [n (map inc (doall (range total)))]
+  (doseq [n (map inc (doall (range total)))]
     (let [problem (get-val "foreclojure.test/p" n)
           solution (get-val "foreclojure.test/s" n)]
       (if (and problem solution)
