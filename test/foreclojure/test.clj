@@ -34,4 +34,5 @@
     (let [problem (get-val "foreclojure.test/p" n)
           solution (get-val "foreclojure.test/s" n)]
       (if (and problem solution)
-        (is (= (apply land (solve problem solution)) true))))))
+        (do (println "testing problem" n)
+            (is (= (apply land (solve problem solution)) true)))))))
