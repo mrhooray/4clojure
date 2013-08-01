@@ -136,7 +136,7 @@ lein test
 131. [_] Sum Some Set Subsets
 132. [_] Insert between two items
 133. [_] 
-134. [_] A nil key
+134. [x] A nil key
 135. [_] Infix Calculator
 136. [_] 
 137. [_] Digits and bases
