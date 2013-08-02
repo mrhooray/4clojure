@@ -153,3 +153,21 @@ lein test
 148. [_] The Big Divide
 149. [_] 
 150. [_] Palindromic Numbers
+151. [_] 
+152. [_] Latin Square Slicing
+153. [_] Pairwise Disjoint Sets
+154. [_] 
+155. [_] 
+156. [x] Map Defaults
+157. [_] Indexing Sequences
+158. [_] Decurry
+159. [_] 
+160. [_] 
+161. [x] Subset and Superset
+162. [x] Logical falsity and truth
+163. [_] Language of a DFA
+164. [_] 
+165. [_] 
+166. [x] Comparisons
+167. [_] 
+168. [_] Infinite Matrix
