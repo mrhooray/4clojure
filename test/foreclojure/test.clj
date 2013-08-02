@@ -6,7 +6,7 @@
             [clojure.string :as string]))
 
 (def width 3)
-(def total 150)
+(def total 1000)
 (def dir "solutions/")
 (def pattern #"\d{3}\..*\.clj")
 
