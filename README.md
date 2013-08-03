@@ -53,8 +53,8 @@ lein test
 048. [x] Intro to Some
 049. [x] Split a Sequence
 050. [x] Split by Type
-051. [_] Advanced Destructuring
-052. [_] Intro to Destructuring
+051. [x] Advanced Destructuring
+052. [x] Intro to Destructuring
 053. [_] Longest Increasing Sub-Seq
 054. [_] Partition a Sequence
 055. [_] Count Occurrences
