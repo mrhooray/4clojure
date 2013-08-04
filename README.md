@@ -85,7 +85,7 @@ lein test
 080. [_] Perfect Numbers
 081. [_] Set Intersection
 082. [_] Word Chains
-083. [_] A Half-Truth
+083. [x] A Half-Truth
 084. [_] Transitive Closure
 085. [_] Power Set
 086. [_] Happy numbers
