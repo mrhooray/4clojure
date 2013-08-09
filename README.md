@@ -63,7 +63,7 @@ lein test
 058. [_] Function Composition
 059. [_] Juxtaposition
 060. [_] Sequence Reductions
-061. [_] Map Construction
+061. [x] Map Construction
 062. [_] Re-implement Iterate
 063. [_] Group a Sequence
 064. [x] Intro to Reduce
