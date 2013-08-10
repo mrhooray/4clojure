@@ -68,7 +68,7 @@ lein test
 063. [_] Group a Sequence
 064. [x] Intro to Reduce
 065. [_] Black Box Testing
-066. [_] Greatest Common Divisor
+066. [x] Greatest Common Divisor
 067. [_] Prime Numbers
 068. [x] Recurring Theme
 069. [_] Merge with a Function
