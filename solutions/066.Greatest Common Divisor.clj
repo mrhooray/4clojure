@@ -6,6 +6,6 @@
            "(= (__ 1023 858) 33)"])
 
 (def s066 "(fn [a b]
-            (if (zero? (rem a b))
-              b
-              (recur b (rem a b))))")
+             (if (zero? (rem a b))
+               b
+               (recur b (rem a b))))")
