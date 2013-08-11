@@ -83,7 +83,7 @@ lein test
 078. [_] Reimplement Trampoline
 079. [_] Triangle Minimal Path
 080. [_] Perfect Numbers
-081. [_] Set Intersection
+081. [x] Set Intersection
 082. [_] Word Chains
 083. [x] A Half-Truth
 084. [_] Transitive Closure
